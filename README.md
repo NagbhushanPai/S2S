@@ -38,18 +38,21 @@ This will start the speech-to-speech translation system. Speak into your microph
 
 If you prefer an interactive approach, open speech2speech_code.ipynb in Jupyter Notebook or JupyterLab. Ensure you have Jupyter installed:
 
+```sh
 pip install notebook
+
+```
 
 Run the notebook cells in order to start the system interactively.
 
-Functions Overview
+Functions Overview:<br>
 
-*translate(sentence, language="French"): Translates the given sentence to the specified language.
-*gen_dub(text): Generates audio from the given text using ElevenLabs.
-*on_open(session_opened): Called when the transcription session is established.
-*on_data(transcript): Called when a new transcript is received. It handles transcription, translation, and speech generation.
-*on_error(error): Called when an error occurs in the transcription session.
-*on_close(): Called when the transcription session is closed.
+*translate(sentence, language="French"): Translates the given sentence to the specified language.<br>
+*gen_dub(text): Generates audio from the given text using ElevenLabs.<br>
+*on_open(session_opened): Called when the transcription session is established.<br>
+*on_data(transcript): Called when a new transcript is received. It handles transcription, translation, and speech generation.<br>
+*on_error(error): Called when an error occurs in the transcription session.<br>
+*on_close(): Called when the transcription session is closed.<br>
 
 # Closing the Session
 To close the session gracefully, ensure you call transcriber.close() at the end of your session.
